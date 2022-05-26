@@ -1,0 +1,19 @@
+Algoritmo "Exercicio02"
+// Introdução à lógica e lógica de programação
+// Aula04 - Constantes, Comandos de Atribuição e Comentários
+
+// Crie um programa que declare 3 variáveis para receber: nome, peso e altura.
+// Ao final imprima os dados na tela.
+
+Var
+   nome:caractere
+   peso,altura:real
+Inicio
+      escreva("Digite seu nome: ")
+      leia(nome)
+      escreva("Digite sua altura: ")
+      leia(altura)
+      escreva("Por fim, digite seu peso: ")
+      leia(peso)
+      escreva("Seu nome é ", nome, ", você tem ", altura, "m de altura e pesa ", peso, "kg.")
+Fimalgoritmo

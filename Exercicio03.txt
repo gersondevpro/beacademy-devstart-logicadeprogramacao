@@ -1,0 +1,22 @@
+Algoritmo "Exercicio03"
+// Introdução à lógica e lógica de programação
+// Aula04 - Constantes, Comandos de Atribuição e Comentários
+
+// Crie um programa que declare 3 variáveis para receber: nome, peso e altura.
+// Calcule e exiba ao final o IMC da pessoa, sabendo que a fórmula para o
+// cálculo é: IMC = peso/(altura*altura)
+
+Var
+   nome:caractere
+   peso,altura,IMC:real
+Inicio
+      escreva("Digite seu nome: ")
+      leia(nome)
+      escreva("Digite sua altura: ")
+      leia(altura)
+      escreva("Por fim, digite seu peso: ")
+      leia(peso)
+      IMC<-peso/(altura*altura)
+      escreval("Seu nome é ", nome, ", você tem ", altura, "m de altura e pesa ", peso, "kg.")
+      escreva("IMC = ", IMC, ".")
+Fimalgoritmo

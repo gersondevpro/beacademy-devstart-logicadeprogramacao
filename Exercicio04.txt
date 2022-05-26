@@ -1,0 +1,30 @@
+Algoritmo "Exercicio04"
+// Introdução à lógica e lógica de programação
+// Aula05 - Operadores Aritméticos, Relacionais, Lógicos,
+// Caracteres, Leitura e Saída de Dados
+
+// Crie um programa que receba o nome e a idade de uma pessoa e exiba:
+// 1. O nome e a idade informada;
+// 2. VERDADEIRO se a idade é maior que 18 anos;
+// 3. FALSO se a idade é diferente de 25 anos;
+// 4. FALSO se a idade é diferente de 25 anos E o nome é igual a Marcos;
+// 5. VERDADEIRO se a idade é diferente de 25 anos OU o nome é igual a Marcos;
+// 6. VERDADEIRO se a idade dividida por dois é igual a ZERO;
+
+Var nome:caractere
+    idade:inteiro
+Inicio
+      // Dados utilizados (nome = diferente de 'Marcos')
+      // (Idade = número ímpar maior que 18 com exceção do nº25)
+      // Resultado esperado: V, F, F, V e V.
+      escreva("Digite seu nome: ")
+      leia(nome)
+      escreval("Digite sua idade: ")
+      leia(idade)
+      escreval("Nome: ", nome, ", ", idade, " anos.")
+      escreval("A idade é maior que 18: ", (idade>18))
+      escreval("A idade é diferente de 25: ", (nao(idade<>25)))
+      escreval("A idade é diferente de 25 'E' o nome é igual a Marcos: ", ((idade<>25)e(nome="Marcos")))
+      escreval((idade<>25)ou(nome="Marcos"))
+      escreva(nao((idade/2)=0))
+Fimalgoritmo
