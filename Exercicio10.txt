@@ -1,0 +1,32 @@
+Algoritmo "Exercicio10"
+// Introdução à lógica e lógica de programação
+// Aula07 - Switch Case
+
+// Crie um programa que receba do usuário a figura geométrica que deseja
+// calcular a área e o perímetro (Q-Quadrado ou T-Triângulo) e calcule e exiba
+// a área e o perímetro da figura escolhida.
+
+Var
+   figura:caractere
+   ladoQuadrado,ladoTriangulo,alturaTriangulo:real
+
+Inicio
+      escreval("Digite a figura que quer trabalhar 'Q' para quadrado e 'T' para triângulo: ")
+      leia(figura)
+      ESCOLHA figura
+        caso "Q"
+          escreval("Qual a medida do lado do quadrado?")
+          leia(ladoQuadrado)
+          escreval("O perímetro do quadrado é: ", (ladoQuadrado*4), ".")
+          escreval("A área do quadrado é: ", (ladoQuadrado^2), ".")
+        caso "T"
+          escreval("Qual a medida do lado do triângulo equilátero?")
+          leia(ladoTriangulo)
+          escreval("Qual a medida da altura do triângulo equilátero?")
+          leia(alturaTriangulo)
+          escreval("O perímetro do triângulo é: ", (ladoTriangulo*3), ".")
+          escreval("A área do triângulo é: ", ((ladoTriangulo*alturaTriangulo)/2), ".")
+        OUTROCASO
+          escreval("Opção de figura inválida! Escolha a figura novamente.")
+      FIMESCOLHA
+Fimalgoritmo

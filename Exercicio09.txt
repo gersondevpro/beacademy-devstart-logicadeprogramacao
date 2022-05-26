@@ -1,0 +1,36 @@
+Algoritmo "Exercicio09"
+// Introdução à lógica e lógica de programação
+// Aula07 - Switch Case
+
+// Crie um programa que solicite ao usuário a operação desejada e implemente
+// as quatro operações matemáticas (soma, subtração, multiplicação e divisão).
+
+Var numero1,numero2:real
+    operacao:caractere
+    resultado:real
+
+Inicio
+      escreval("Digite um número: ")
+      leia(numero1)
+      escreval("Digite a operação (+), (-), (*) ou (/): ")
+      leia(operacao)
+      escreval("Digite outro número: ")
+      leia(numero2)
+      ESCOLHA operacao
+        caso "+"
+        resultado:=numero1+numero2
+        caso "-"
+        resultado:=numero1-numero2
+        caso "*"
+        resultado:=numero1*numero2
+        caso "/"
+        resultado:=numero1/numero2
+        outrocaso
+        resultado:=99999999999
+      FIMESCOLHA
+      Se (resultado=(99999999999)) entao
+        escreval("Operador escolhido inválido. Refaça a operação!")
+      Senao
+        escreval("O resultado é: ", resultado)
+      fimse
+Fimalgoritmo
