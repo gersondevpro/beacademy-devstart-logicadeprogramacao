@@ -1,0 +1,28 @@
+Algoritmo "Exercicio07"
+// Introdução à lógica e lógica de programação
+// Aula06 - Se, Senão se, Senão
+
+// Crie um programa que receba a idade de uma pessoa e a classifique como:
+// Menos de 18 anos -> Menor de idade
+// Mais que 18 anos e menos de 60 -> Adulto
+// Mais que 60 anos -> Idoso
+
+Var
+   nome:caractere
+   idade:real
+Inicio
+      escreval("Digite seu nome: ")
+      leia(nome)
+      escreval(nome, " vamos descobrir como você é classificado(a) por sua idade!")
+      escreval("Digite sua idade: ")
+      leia(idade)
+      Se (idade<18) entao
+        escreval("Você é menor de idade")
+      Senao
+        se ((idade>=18)e(idade<60)) entao
+          escreval ("Você é adulto")
+        senao
+          escreval("Você é idoso")
+        fimse
+      fimse
+Fimalgoritmo

@@ -1,0 +1,50 @@
+Algoritmo "Exercicio08"
+// Introdução à lógica e lógica de programação
+// Aula06 - Se, Senão se, Senão
+
+// Crie um programa que permita o usuário escolher a operação a realizar
+// (saque ou depósito). Receba a informação da operação escolhida e o valor
+// do usuário e, em seguida, atualize seu saldo. Ao final, exiba o valor
+// inicial, a operação realizada e o saldo atual.
+
+Var
+   saldoInicial,deposito,saque,saldoFinal,opcao:real
+   nome:caractere
+Inicio
+      escreval("Digite seu nome: ")
+      leia(nome)
+      saldoInicial<-2000
+      escreval(nome, " seu saldo é de ", saldoInicial, " reais.")
+      escreval("Hoje, você gostaria de fazer um depósito, ou um saque de sua conta?")
+      escreval("Digite (1) para saque ou (2) para depósito.")
+      leia(opcao)
+      Se (opcao=1) entao
+        escreval("Digite o valor que quer sacar.")
+        leia(saque)
+        saldoFinal<-saldoInicial-saque
+          Se (saque<=2000) entao
+            escreval("O valor inicial antes de sua operação era de ", saldoInicial, " reais.")
+          Senao
+            escreval(nome, " o valor excede o seu saldo atual. Você entrará no limite de seu cheque especial.")
+          fimse
+      Senao
+        se(opcao=2) entao
+          escreval("Digite o valor que quer depositar.")
+          leia(deposito)
+          saldoFinal<-saldoInicial+deposito
+          escreval("O valor inicial antes de sua operação era de ", saldoInicial, " reais.")
+        Senao
+          escreval("Opção inválida, por favor refaça o algorítmo.")
+        fimse
+      fimse
+
+      Se (opcao=1) entao
+        escreval("Hoje você decidiu sacar um valor de ", saque, " reais de sua conta.")
+        escreval(nome, ", seu saldo final após a operação de hoje é de ", saldoFinal, " reais.")
+      Senao
+        se (opcao=2) entao
+          escreval("Hoje você decidiu depositar um valor em sua conta.")
+          escreval(nome, ", seu saldo final após a operação de hoje é de ", saldoFinal, " reais.")
+        fimse
+      fimse
+Fimalgoritmo

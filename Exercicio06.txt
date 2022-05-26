@@ -1,0 +1,43 @@
+Algoritmo "Exercicio06"
+// Introdução à lógica e lógica de programação
+// Aula06 - Se, Senão se, Senao
+
+// Crie um programa que receba a altura e o peso de uma pessoa, e
+// a classifique de acordo com as orientações:
+// IMC<19 -> abaixo do peso
+// IMC>=19 e <25 -> peso normal
+// IMC>=25 e <30 -> sobrepeso
+// IMC>=30 e <40 -> Obesidade Tipo I
+// IMC>40 -> Obesidade mórbida
+
+Var
+   altura,peso,IMC:real
+   nome:caractere
+Inicio
+      escreva("Digite seu nome: ")
+      leia(nome)
+      escreval(nome, " vamos descobrir juntos seu IMC (Índide de Massa Corpórea).")
+      escreval("Digite sua altura: ")
+      leia(altura)
+      escreval("Digite seu peso: ")
+      leia(peso)
+      IMC<-peso/(altura^2)
+      escreval("IMC: ", IMC)
+      Se (IMC<19) entao
+        escreval("Abaixo do peso")
+      Senao
+        se ((IMC>=19)e(IMC<25)) entao
+          escreva("Peso normal")
+        Senao
+          se ((IMC>=25)e(IMC<30)) entao
+            escreval("Sobrepeso")
+          Senao
+            se ((IMC>=30)e(IMC<40)) entao
+              escreval("Obesidade tipo I")
+            Senao
+              escreval("Obesidade mórbida")
+            fimse
+          fimse
+        fimse
+      fimse
+Fimalgoritmo
