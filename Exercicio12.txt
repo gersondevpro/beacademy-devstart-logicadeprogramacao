@@ -1,0 +1,15 @@
+Algoritmo "Exercicio12"
+// Introdução à lógica e lógica de programação
+// Aula08 - Estrutura de repetição 'para' (for)
+
+// Crie um programa que receba do usuário um número e apresente a tabuada deste.
+
+Var
+   numero,x:inteiro
+Inicio
+      escreval("Digite um NÚMERO para obter sua tabuada: ")
+      leia(numero)
+      para x de 1 ate 10 passo x+1 faca
+        escreval(numero, " *", x, " é igual a", numero*x, ".")
+      fimpara
+Fimalgoritmo

@@ -1,0 +1,20 @@
+Algoritmo "Exercicio14"
+// Introdução à lógica e lógica de programação
+// Aula08 - Estrutura de repetição 'para' (for)
+
+// Crie um programa que imprima os múltiplos de 3 entre dois números digitados
+// pelo usuário.
+
+Var
+   numero1,numero2,x:inteiro
+Inicio
+      escreval("Digite um número: ")
+      leia(numero1)
+      escreval("Digite um número maior do que o primeiro: ")
+      leia(numero2)
+      para x de numero1 ate numero2 passo x+1 faca
+      Se ((x%3)=0) entao
+        escreval(x)
+      fimse
+      fimpara
+Fimalgoritmo
