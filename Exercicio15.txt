@@ -1,0 +1,73 @@
+Algoritmo "Exercicio15"
+// Introdução à lógica e lógica de programação
+// Aula08 - Estrutura de repetição 'para' (for)
+
+// Crie um programa que, utilizando a estrutura 'escolha-caso' permita o
+// usuário escolher a operação que a realizar: D-Depósito, S-Saque
+// ou T-Transferência.
+// Caso a operação escolhida seja transferência, solicite o nome do banco,
+// agência e conta, receba as informações, e ao final exiba o valor inicial
+// a operação realizada, e o saldo atual.
+// Se transferência, retorne também os dados do banco, agência e conta
+// para onde o dinheiro foi.
+// Altere o programa acima a fim de repetir a operação, por tantas vezes
+// quanto o usuário desejar inicialmente, implemente a solução utilizando
+// a estrutura 'para'.
+
+Var saque,deposito,transferencia, saldoAtual:real
+    operacao,nomeBanco,agenciaFavorecido,contaFavorecido:caractere
+    x,i:inteiro
+Inicio
+      saldoAtual<-5000
+      escreval("Olá, seu saldo é de ", saldoAtual, " reais.")
+      escreval("Quantas operações você deseja realizar nesta sessão? Limite de 10 operações por vez.")
+      leia(i)
+      Se ((i>=1)e(i<=10)) entao
+        para x de 1 até i passo x+1 faca
+
+        escreval("Digite a operação que quer realizar: 'S' para saque, 'D' para depósito ou 'T' para transferência:")
+        leia(operacao)
+        ESCOLHA operacao
+
+          caso "S"
+          escreval("Qual valor que sacar?")
+          leia(saque)
+            Se (saque<=saldoAtual) entao
+              saldoAtual<-saldoAtual-saque
+              escreval("Você sacou ", saque, " reais, e seu novo saldo é de ", saldoAtual, " reais.")
+              escreval
+            Senao
+              escreval("Saque não permitido! O valor excede seu saldo atual que é de ", saldoAtual, " reais . Próxima operação!")
+              escreval
+            fimse
+
+          caso "D"
+          escreval("Qual valor que depositar?")
+          leia(deposito)
+          saldoAtual<-saldoAtual+deposito
+          escreval("Você depositou ", deposito, " reais, e seu novo saldo é de ", saldoAtual, " reais.")
+          escreval
+
+          caso "T"
+          escreval("Para qual banco deseja realizar a transferência?")
+          leia(nomeBanco)
+          escreval("Digite o número da agência do favorecido?")
+          leia(agenciaFavorecido)
+          escreval("Digite o número da conta do favorecido: ")
+          leia(contaFavorecido)
+          escreval("Digite o valor que deseja transferir: ")
+          leia(transferencia)
+            Se (transferencia<=saldoAtual) entao
+            saldoAtual<-saldoAtual-transferencia
+              escreval("Você transferiu ", transferencia, " reais, para o banco ", nomeBanco, ", agência: ", agenciaFavorecido, ", conta: ", contaFavorecido, " e seu novo saldo é de ", saldoAtual, " reais.")
+              escreval
+            Senao
+              escreval("Tranferência não permitida! O valor excede seu saldo atual que é de ", saldoAtual, " reais . Próxima operação!")
+              escreval
+            fimse
+        FIMESCOLHA
+        fimpara
+      Senao
+        escreval("Opção inválida! Refaça a operação.")
+      fimse
+Fimalgoritmo
