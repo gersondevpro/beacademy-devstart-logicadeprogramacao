@@ -1,0 +1,14 @@
+Algoritmo "Exercicio01"
+// Introdução à lógica e lógica de programação
+// Aula03 - Visualg e Variáveis
+
+// Solicite o endereço de uma pessoa, execute o programa,
+// e veja se a saída condiz com o endereço digitado.
+
+Var
+   nome:caractere
+Inicio
+      escreva("Digite seu nome completo: ")
+      leia(nome)
+      escreva("É um prazer conhecê-lo(a) ", nome, ".")
+Fimalgoritmo
