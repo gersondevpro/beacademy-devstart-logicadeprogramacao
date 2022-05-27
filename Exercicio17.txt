@@ -1,0 +1,30 @@
+Algoritmo "Exercicio17"
+// Introdução à lógica e lógica de programação
+// Aula09 - Estrutura de repetição - Enquanto (while)
+
+// Crie um programa que solicite ao usuário o seu nome e senha do cartão e
+// valide se os dados estão corretos (Nome: Andre, senha: 024680) e, caso
+// positivo, dê boas vindas ao usuário. Em casos negativos, solicite os dados
+// novamente.
+
+Var
+   nome,senha:caractere
+   x:inteiro
+
+Inicio
+      nome<-"Andre"
+      senha<-"024680"
+      escreval("Seja bem vindo(a)! Digite o nome que está em seu cartão: ")
+      leia(nome)
+      escreval("Digite sua senha: ")
+      leia(senha)
+      enquanto (nome <> "Andre")ou(senha <> "024680") faca
+        escreval("Nome e/ou senha inválidas. Tente novamente!")
+        escreval
+        escreval("Digite o nome que está em seu cartão: ")
+        leia(nome)
+        escreval("Digite sua senha: ")
+        leia(senha)
+      fimenquanto
+      escreval("Seja bem vindo a este terminal de antendimento. Qual operação deseja realizar?")
+Fimalgoritmo

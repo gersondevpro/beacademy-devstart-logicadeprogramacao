@@ -1,0 +1,99 @@
+Algoritmo "Exercicio19"
+// Introdução à lógica e lógica de programação
+// Aula09 - Estrutura de repetição - Enquanto (while)
+
+// Crie um programa que permita ao usuário escolher a operação que deseja
+// realizar (depósito, saque, transferência ou empréstimo). Em seguida
+// solicite os dados para concretizar a operação e imprima o nome da
+// operação feita, e os dados referentes a ela.
+
+// Obs.: No enunciado do exercício não foi passado uma condição para o uso
+// do ENQUANTO, sendo assim, criei uma condição para tal.
+
+Var saque,deposito,transferencia,emprestimo,saldoAtual,credito,aprovado,opcao1,opcao2,opcao3:real
+    operacao,nomeBanco,agenciaFavorecido,contaFavorecido:caractere
+    x,chequeespecial:inteiro
+Inicio
+      saldoAtual<-5000
+      chequeespecial<-2000
+      escreval("Seu saldo é de ", saldoAtual, " reais.")
+      ENQUANTO saldoAtual>0 faca
+        escreval("Digite a operação que quer realizar: 'S' para saque, 'D' para depósito, 'T' para transferência, 'E' para empréstimo, ou 'X' para encerrar a seção: ")
+        leia(operacao)
+        ESCOLHA operacao
+          caso "S"
+          escreval("Qual valor quer sacar?")
+          leia(saque)
+            Se (saque<=saldoAtual+chequeespecial) entao
+              saldoAtual<-saldoAtual-saque
+              escreval("Você sacou ", saque, " reais, e seu novo saldo é de ", saldoAtual, " reais.")
+              escreval
+            Senao
+              escreval("Saque não permitido! O valor excede seu saldo atual que é de ", saldoAtual, " reais . Refaça a operação!")
+              escreval
+            fimse
+          caso "D"
+          escreval("Qual valor quer depositar?")
+          leia(deposito)
+          saldoAtual<-saldoAtual+deposito
+          escreval("Você depositou ", deposito, " reais, e seu novo saldo é de ", saldoAtual, " reais.")
+          escreval
+          caso "T"
+          escreval("Para qual banco deseja realizar a transferência?")
+          leia(nomeBanco)
+          escreval("Digite o número da agência do favorecido?")
+          leia(agenciaFavorecido)
+          escreval("Digite o número da conta do favorecido: ")
+          leia(contaFavorecido)
+          escreval("Digite o valor que deseja transferir: ")
+          leia(transferencia)
+            Se (transferencia<=saldoAtual+chequeespecial) entao
+            saldoAtual<-saldoAtual-transferencia
+              escreval("Você transferiu ", transferencia, " reais, para o banco ", nomeBanco, ", agência: ", agenciaFavorecido, ", conta: ", contaFavorecido, " e seu novo saldo é de ", saldoAtual, " reais.")
+              escreval
+            Senao
+              escreval("Tranferência não permitida! O valor excede seu saldo atual que é de ", saldoAtual, " reais . Refaça a operação!")
+              escreval
+            fimse
+          caso "E"
+          escreval("Qual valor deseja emprestar?")
+          leia(emprestimo)
+          credito<-saldoAtual*2
+          escreval
+            se emprestimo<=credito entao
+              opcao1<-(((emprestimo+(emprestimo/100)*37.8)/10))
+              opcao2<-(((emprestimo+(emprestimo/100)*52.5)/18))
+              opcao3<-(((emprestimo+(emprestimo/100)*69)/36))
+              escreval("Opção 1 - 10x de R$", opcao1:2:2)
+              escreval("Opção 2 - 18x de R$", opcao2:2:2)
+              escreval("Opção 3 - 36x de R$", opcao3:2:2)
+              escreval
+              escreval("Escolha a melhor opção de parcelamento pra você: '1', '2' ou '3'")
+              leia(aprovado)
+                ESCOLHA aprovado
+                caso 1
+                  escreval("Você acaba de emprestar ", emprestimo, " reais, através da seguinte condição: Opção 1 - 10x de R$", opcao1:2:2, " reais.")
+                  escreval
+                caso 2
+                  escreval("Você acaba de emprestar ", emprestimo, " reais, através da seguinte condição: Opção 2 - 18x de R$", opcao2:2:2, " reais.")
+                  escreval
+                caso 3
+                  escreval("Você acaba de emprestar ", emprestimo, " reais, através da seguinte condição: Opção 3 - 36x de R$", opcao3:2:2, " reais.")
+                  escreval
+                outrocaso
+                  escreval("Opção inválida! Refaça a operação.")
+              Senao
+                escreval("Crédito não aprovado no momento.")
+                FIMESCOLHA
+              fimse
+          caso "X"
+            interrompa
+        FIMESCOLHA
+      FIMENQUANTO
+      escreval
+      se saldoAtual<0 entao
+        escreval("Você entrou no cheque especial. Impossível prosseguir com as operações.")
+        Senao
+          escreval("Seção encerrada!")
+      fimse
+Fimalgoritmo

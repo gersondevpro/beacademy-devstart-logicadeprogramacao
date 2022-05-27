@@ -30,7 +30,7 @@ Inicio
         ESCOLHA operacao
 
           caso "S"
-          escreval("Qual valor que sacar?")
+          escreval("Qual valor quer sacar?")
           leia(saque)
             Se (saque<=saldoAtual) entao
               saldoAtual<-saldoAtual-saque
@@ -42,7 +42,7 @@ Inicio
             fimse
 
           caso "D"
-          escreval("Qual valor que depositar?")
+          escreval("Qual valor quer depositar?")
           leia(deposito)
           saldoAtual<-saldoAtual+deposito
           escreval("Você depositou ", deposito, " reais, e seu novo saldo é de ", saldoAtual, " reais.")

@@ -1,0 +1,17 @@
+Algoritmo "Exercicio16"
+// Introdução à lógica e lógica de programação
+// Aula09 - Estrutura de repetição - Enquanto (while)
+
+// Crie um programa que imprima a tabuada de um número digitado pelo usuário.
+
+Var
+   numero,x:inteiro
+Inicio
+      escreva("Digite um número para ver sua tabuada: ")
+      leia(numero)
+      x<-0
+      enquanto x<11 faca
+        escreval(numero, " x", x, " =", x*numero)
+        x<-x+1
+      fimenquanto
+Fimalgoritmo

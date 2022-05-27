@@ -1,0 +1,28 @@
+Algoritmo "Exercicio18"
+// Introdução à lógica e lógica de programação
+// Aula09 - Estrutura de repetição - Enquanto (while)
+
+// Crie um programa que realize as 4 operações matemáticas a partir de dois
+// números que serão digitados pelo usuário. Após isto imprima os valore na
+// tela e, em seguida, pergunte se ele quer realizar um novo cálculo,
+// repetindo as operações quantas vezes o usuário quiser.
+
+Var numero1,numero2:inteiro
+    x:caractere
+Inicio
+      x<-"sim"
+      enquanto x="sim" faca
+        escreva("Digite um número: ")
+        leia(numero1)
+        escreva("Digite outro número: ")
+        leia(numero2)
+        escreval("A soma de ", numero1, " +", numero2, " é ", (numero1+numero2), ".")
+        escreval("A diferença da subtração de ", numero1, " -", numero2, " é ", (numero1-numero2), ".")
+        escreval("O produto da multiplicação entre ", numero1, " *", numero2, " é ", (numero1*numero2), ".")
+        escreval("O quociente da divisão de ", numero1, " /", numero2, " é ", (numero1/numero2), ".")
+        escreval(" ")
+        escreval("Deseja realizar uma nova operação? Digite 'sim' se quiser!")
+        leia(x)
+        escreval
+      fimenquanto
+Fimalgoritmo
