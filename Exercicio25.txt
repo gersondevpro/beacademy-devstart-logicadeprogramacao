@@ -1,0 +1,36 @@
+Algoritmo "Exercicio25"
+// Introdução à lógica e lógica de programação
+// Aula11 - Estruturas de Dados
+
+// Crie um programa que permita cadastrar os seguintes dados de um aluno:
+// Nome, nota1 e nota2. Receba estes valores em vetores e calcule e exiba ao
+// final todos os dados e a informação se o aluno foi aprovado (media maior
+// ou igual a 6) ou reprovado (media inferior a 6).
+
+Var
+   aluno: vetor [1..5] de caractere
+   nota1: vetor [1..5] de real
+   nota2: vetor [1..5] de real
+   media:real
+   i: inteiro
+Inicio
+      escreval("Programa que calcula aprovação ou reprovação da turma.")
+      para i<-1 ate 5 faca
+        escreval
+        escreval("Nome completo do aluno: ")
+        leia(aluno[i])
+        escreval("Nota da prova mensal: ")
+        leia(nota1[i])
+        escreval("Nota da prova ooficial: ")
+        leia(nota2[i])
+        escreval
+        media<-(nota1[i]+nota2[i])/2
+        se media>=6 entao
+          escreval("O aluno(a) ", aluno[i], " terminou o semestre com a media ", media:2:2, " e foi APROVADO(A)!")
+        senao
+          escreval("O aluno(a) ", aluno[i], " terminou o semestre com a media ", media:2:2, " e foi REPROVADO(A)!")
+        fimse
+      fimpara
+      escreval
+      escreval("Fim da execução de notas desta classe!")
+Fimalgoritmo

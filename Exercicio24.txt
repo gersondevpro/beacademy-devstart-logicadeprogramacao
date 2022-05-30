@@ -1,0 +1,26 @@
+Algoritmo "Exercicio24"
+// Introdução à lógica e lógica de programação
+// Aula11 - Estruturas de Dados
+
+// Faça um programa que solicite ao usuário o nome e o preço de 10 produtos
+// e armazene-os em um vetor. Ao final imprima o nome e os valores referentes
+// aos produtos.
+
+Var
+   produto: vetor [1..10] de caractere
+   preco: vetor [1..10] de real
+   i: inteiro
+Inicio
+      escreval("Ofertas do Shibata: ")
+      para i<-1 ate 10 faca
+        escreval
+        escreval("Nome do produto: ")
+        leia(produto[i])
+        escreval("Preço do produto: ")
+        leia(preco[i])
+        escreval
+      fimpara
+      para i<-1 ate 10 faca
+        escreval("O produto: ", produto[i], " custa R$", preco[i], " a unidade.")
+      fimpara
+Fimalgoritmo
