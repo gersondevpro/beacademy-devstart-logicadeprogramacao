@@ -28,10 +28,10 @@ Inicio
       fimpara
       escreval
       escreval("Cadastro do cliente 1: ", cadastro[1], ".")
-      escreval("Cadastro do cliente 1: ", cadastro[2], ".")
-      escreval("Cadastro do cliente 1: ", cadastro[3], ".")
-      escreval("Cadastro do cliente 1: ", cadastro[4], ".")
-      escreval("Cadastro do cliente 1: ", cadastro[5], ".")
+      escreval("Cadastro do cliente 2: ", cadastro[2], ".")
+      escreval("Cadastro do cliente 3: ", cadastro[3], ".")
+      escreval("Cadastro do cliente 4: ", cadastro[4], ".")
+      escreval("Cadastro do cliente 5: ", cadastro[5], ".")
       escreval
       escreval("Final da lista de cadastramento.")
 Fimalgoritmo
