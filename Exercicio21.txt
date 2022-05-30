@@ -1,0 +1,33 @@
+Algoritmo "Exercicio21"
+// Introdução à lógica e lógica de programação
+// Aula10 - Estrutura de Repeticao - Enquanto Repita-ate (Do While)
+
+// Solicitar a idade de várias pessoas e imprimir:
+// O total de pessoas com MENOS de 18 anos;
+// O total de pessoas com MAIS de 60 anos;
+// O programa termina quando o usuário digitar "-99".
+
+Var idade,menor18,maior60:inteiro
+
+Inicio
+      menor18<-0
+      maior60<-0
+      escreval("Contador de idade:")
+      repita
+      escreva("Informe idade: ")
+      leia(idade)
+        se (idade<18)e(idade<>-99) entao
+        menor18<-menor18+1
+          senao
+            se idade>60 entao
+            maior60<-maior60+1
+          fimse
+        fimse
+      escreval("Parcial: ")
+      escreval("menores de 18 anos =", menor18, " pessoas.")
+      escreval("maiores de 60 anos =", maior60, " pessoas.")
+      escreval
+      ate idade=-99
+      escreval("Programa finalizado a pedido do usuário.")
+      escreval("Contagem final: ", menor18, " pessoas com menos de 18 anos e ", maior60, " com mais de 60.")
+Fimalgoritmo

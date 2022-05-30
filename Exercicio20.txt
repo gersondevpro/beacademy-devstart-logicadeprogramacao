@@ -1,0 +1,44 @@
+Algoritmo "Exercicio20"
+// Introdução à lógica e lógica de programação
+// Aula10 - Estrutura de Repeticao - Enquanto Repita-ate (Do While)
+
+// Crie um programa que permita ao usuário tentar logar em seu sistema
+// informando seu nome e senha. Repita a operação até que o nome e senha
+// correspondam a um valor armazenado (Gerson - 252627). Caso o usuário
+// digite -1 interrompa a repetição e informe que o programa será finalizado
+// por solicitação do usuário.
+
+Var
+   usuario,senha:caractere
+   erro:inteiro
+   
+Inicio
+      usuario<-"Gerson"
+      senha<-"252627"
+      erro<-1
+      repita
+      escreval("Seja bem vindo a aplicação VisuAlg. Digite seu login: ")
+      leia(usuario)
+      escreval("Digite sua senha: ")
+      leia(senha)
+      escreval(" ")
+      se (usuario="-1")ou(senha="-1") entao
+        escreval("Programa finalizado a pedido do usuário.")
+        interrompa
+        senao
+        se (usuario="Gerson")e(senha="252627") entao
+          escreval("Seja bem vindo Gerson! Iniciando aplicação...")
+          interrompa
+          senao
+            se (usuario<>"Gerson")e(senha<>"252627") entao
+              escreval("Usuário e/ou senha inválida. Você tem mais ", (3-erro), " tentativa(s).")
+              erro<-erro+1
+              escreval(" ")
+          fimse
+        fimse
+      fimse
+      ate erro=4
+      se erro=4 entao
+      escreval("Você excedeu o número de tentativas. Sessão encerrada!")
+      fimse
+Fimalgoritmo
