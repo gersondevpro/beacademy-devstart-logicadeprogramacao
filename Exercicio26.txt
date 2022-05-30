@@ -1,0 +1,37 @@
+Algoritmo "Exercicio26"
+// Introdução à lógica e lógica de programação
+// Aula11 - Estruturas de Dados
+
+// Crie um programa que permita ao usuário cadastrar 5 clientes com os
+// seguintes dados: Nome, CPF, RG, Endereço e telefone.
+// Guarde os dados dos clientes em um vetor, e ao final, exiba-os.
+
+Var
+   cliente,cpf,rg,telefone,endereco,cadastro: vetor [1..5] de caractere
+   i: inteiro
+Inicio
+      escreval("Programa para cadastro de clientes.")
+      para i<-1 ate 5 faca
+        escreval
+        escreval("Nome do cliente: ")
+        leia(cliente[i])
+        escreval("CPF: ")
+        leia(cpf[i])
+        escreval("RG: ")
+        leia(rg[i])
+        escreval("Telefone com DDD: ")
+        leia(telefone[i])
+        escreval("Endereço com nº: ")
+        leia(endereco[i])
+        escreval
+        cadastro[i]<-("Nome do cliente: "+cliente[i]+", "+"CPF: "+cpf[i]+", "+"RG: "+rg[i]+", "+"Telefone: "+telefone[i]+", "+"Endereço: "+endereco[i]+".")
+      fimpara
+      escreval
+      escreval("Cadastro do cliente 1: ", cadastro[1], ".")
+      escreval("Cadastro do cliente 1: ", cadastro[2], ".")
+      escreval("Cadastro do cliente 1: ", cadastro[3], ".")
+      escreval("Cadastro do cliente 1: ", cadastro[4], ".")
+      escreval("Cadastro do cliente 1: ", cadastro[5], ".")
+      escreval
+      escreval("Final da lista de cadastramento.")
+Fimalgoritmo
