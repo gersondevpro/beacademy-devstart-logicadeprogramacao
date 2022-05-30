@@ -1,0 +1,42 @@
+Algoritmo "Exercicio23"
+// Introdução à lógica e lógica de programação
+// Aula10 - Estrutura de Repeticao - Enquanto Repita-ate (Do While)
+
+// Crie um programa que inicie com um saldo de um cliente em R$1000 e
+// que o permita realizar saques consecutivos no valor de R$150 até que
+// o saldo não atenda mais a solicitação.
+// Quando isso ocorrer interrompa a operação e informe que o saque não
+// pode ser efetuado em razão de que o saldo era insuficiente para efetua a
+// operação.
+
+Var
+   saldo:inteiro
+   resposta:caractere
+   
+Inicio
+      saldo<-1000
+      escreval("Dispositivo para saque inicializado...")
+      escreval
+      repita
+      escreval("Seu saldo atual é de: ", saldo, " reais.")
+      escreva("Deseja sacar R$150 reais? Digite 'sim' ou 'não': ")
+      leia(resposta)
+        se (resposta="sim")e(saldo>150) entao
+          saldo<-saldo-150
+          escreval("Seu saldo após esta operação é de: ", saldo, " reais.")
+          escreval
+          senao
+          se (resposta="sim")e(saldo<150) entao
+          escreval
+            escreval("Saldo insuficiente para realizar a operação! Sessão encerrada.")
+            interrompa
+            senao
+            se (resposta="nao") entao
+              escreval
+              escreval("Sessão encerrada!")
+              interrompa
+            fimse
+          fimse
+        fimse
+      ate saldo<0
+Fimalgoritmo
